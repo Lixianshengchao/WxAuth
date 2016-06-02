@@ -30,5 +30,9 @@ public class CallBackServlet extends HttpServlet{
 				+ "&lang=zh_CN";
 		JSONObject userInfo = AuthUtil.doGetJson(infoUrl);
 		System.out.println(userInfo);
+		
+		//1、使用微信用户信息直接登录，无需注册和绑定
+		req.setAttribute("info", userInfo);
+		req.getRequestDispatcher("/index1.jsp").forward(req, resp);
 	}
 }

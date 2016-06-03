@@ -16,7 +16,7 @@ public class LoginServlet extends HttpServlet{
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp)
 			throws ServletException, IOException {
-		String backUrl = "http://brucebsc.eicp.net/WxAuth/callBack";
+		String backUrl = "http://brucebsc.eicp.net/WxAuth/wxCallBack";
 		String url = "https://open.weixin.qq.com/connect/oauth2/authorize?appid="+AuthUtil.APPID
 				+ "&redirect_uri="+URLEncoder.encode(backUrl)
 				+ "&response_type=code"

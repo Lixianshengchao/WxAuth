@@ -7,10 +7,10 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<form action="/WxAuth/wxCallBack" method="post">
+	<form action="/WxAuth/pcCallBack" method="post">
 		<input type="text" name="account">
 		<input type="password" name="password">
-		<input type="hidden" name="openid" value="${openid}">
+		<input type="hidden" name="unionid" value="${unionid}">
 		<input type="submit" value="登录并绑定">
 	</form>
 </body>

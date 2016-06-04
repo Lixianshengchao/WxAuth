@@ -7,6 +7,8 @@
 <title>Insert title here</title>
 </head>
 <body style="font-size:40px;text-align:center;">
+	<a href="/WxAuth/pcLogin">开放平台授权登录</a>
+	<br><br><br>
 	<a href="/WxAuth/wxLogin">微信公众授权登录</a>
 </body>
 </html>
